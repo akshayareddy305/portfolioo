@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- CSS File -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const navLinks = document.getElementById("nav-links");
+
+  toggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav">
+      <h1 class="logo"></h1>
+      <div class="menu-toggle" id="menu-toggle">
+      Hpme|About|Portfolio|Contact
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="https://www.linkedin.com/in/contactakshayareddy?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <h2></h2>
+      <p></p>
+      <a></a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p>
+      I am a Frontend Developer who enjoys turning design ideas into interactive and responsive web experiences. I have worked on multiple frontend projects using HTML, CSS, and JavaScript, focusing on clean UI and smooth user interaction. I also completed an internship in Cloud Computing with AWS, where I gained hands-on experience with cloud services and deployment basics. I am always eager to learn, improve my skills, and work on meaningful projects.
+    </div>
+  </section>
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <p>
+      Frontend Development | AWS Cloud Fundamentals | Responsive Design | UI/UX | Deployment & Hosting
+     <h5>PROJECTS</h5>    
+    </div>
+  </section>
+
+  <section id="portfolio" class="section light-bg">
+  <div class="container">
+    <h2 class="section-title">Portfolio</h2>
+
+    <div class="grid">
+      <!-- CoffeeCo Project -->
+      <div class="card">
+        <div class="coffee-img">CoffeeCo Website</div>
+        <h3>CoffeeCo Landing Page</h3>
+        <p>
+          A responsive coffee brand landing page built using HTML and CSS.
+          Includes hero section, features, testimonials, and a fixed navbar.
+        </p>
+        <a href="coffeeco/index.html" class="btn" target="_blank">View Project</a>
+      </div>
+    </div>
+  </div>
+</section>
+   <section id="portfolio" class="section light-bg">
+  <div class="container">
+    <div class="grid">
+      <!-- FLEUR Project -->
+      <div class="card">
+        <div class="flower-img">FLEUR Website</div>
+        <h3>FLEUR Landing Page</h3>
+        <p>
+         A modern, minimalist e-commerce website designed for a dried flower brand. The layout focuses on soft neutral tones, elegant typography, and spacious sections to highlight products and services. The website includes a hero banner, service categories, featured collections, and promotional sections, providing a calm and premium shopping experience.
+        </p>
+        <a href="FLEUR/index.html" class="btn"target="_blank">View Project</a>
+      </div>
+    </div>
+  </div>
+  <section id="portfolio" class="section light-bg">
+  <div class="container">
+    <div class="grid">
+      <div class="card">
+        <div class="pipes-img">HDPE PIPES WEBSITE</div>
+        <h3>Pipes Landing Page</h3>
+        <p>
+          Designed and developed a product website for HDPE pipes to showcase water supply solutions and product information. Created a clean and structured user interface with clear navigation and product sections. Focused on responsive design and usability to ensure the website works smoothly across different devices.
+        </p>
+        <a href="pipes/index.html" class="btn" target="_blank">View Project</a>
+      </div>
+    </div>
+  </div>
+</section>
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 Akshaya. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/contactakshayareddy?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/"><i class="fab fa-github"></i></a>
+        <a href="https://x.com/akshayareddyy88?s=11"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+

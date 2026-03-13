@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header,
+.navbar,
+.nav {
+  display: none;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* HEADER */
+.header {
+  background: grey;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: grey;
+  background: url("portfolio.png") center/contain no-repeat;
+  z-index: -2;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(31, 27, 28, 0.65),
+    rgba(42, 37, 38, 0.65)
+  );
+  z-index: -1;
+}
+
+/* SECTIONS */
+.section {
+  padding: 4rem 0;
+  background-color:#737071;
+  color: white;
+}
+
+.light-bg {
+  background:#737071;
+  color:#737071 ;
+}
+
+.section-title {
+  margin-bottom: 1.5rem;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background: #8e8f90;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 6px;
+}
+
+/* IMAGE PLACEHOLDERS */
+.coffee-img{
+  height:200px;
+  background:url("cofe.jpg");
+  background-size:cover;
+  background-position:center;
+}
+
+.flower-img{
+  height:200px;
+  background:url("flowerrr.jpg");
+  background-size:cover;
+  background-position:center;
+}
+
+.pipes-img{
+  height:200px;
+  background:url("pipes.jpg");
+  background-size:cover;
+  background-position:center;
+}
+
+
+/* FOOTER */
+.footer {
+  background: #737071;;
+  color: white;
+  padding: 1rem 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icons a {
+  color: white;
+  margin-left: 1rem;
+}
+
+/* 🔥 MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 70vh;
+    background-size: contain;
+  }
+}
+@media (max-width: 768px) {
+
+  .nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero {
+    height: 70vh;
+    padding: 1rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .section {
+    padding: 2.5rem 0;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .social-icons a {
+    margin: 0 0.5rem;
+  }
+}
+
+/* EXTRA SMALL DEVICES */
+@media (max-width: 480px) {
+
+  .hero {
+    height: 60vh;
+  }
+
+  .hero-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    width: 95%;
+  }
+}
+/* HAMBURGER ICON */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+/* MOBILE NAVBAR */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    position: relative;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #737071;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    padding: 0.8rem 0;
+  }
+}
+
